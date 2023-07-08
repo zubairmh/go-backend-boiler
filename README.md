@@ -24,4 +24,8 @@
 ## Contributing
 
 This project is open to contributions, fork this repository and send a pull request incase you wish
-to contribute
+to contribute.
+
+## License
+
+This project is licensed under the Apache License, Version 2.0
