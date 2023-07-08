@@ -11,9 +11,10 @@ import (
 func CreateHTTPServer(port int) *http.Server {
 	router := httprouter.New()
 	createRoutes(router)
-	log.Println("Starting web server")
+	host := fmt.Sprintf("localhost:%d", port)
+	log.Printf("Starting web server: %s", host)
 	return &http.Server{
-		Addr:    fmt.Sprintf("localhost:%d", port),
+		Addr:    host,
 		Handler: router,
 	}
 }
