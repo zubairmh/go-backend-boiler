@@ -19,3 +19,9 @@
     ├── README.md
     └── LICENSE
 ```
+
+
+## Contributing
+
+This project is open to contributions, fork this repository and send a pull request incase you wish
+to contribute
