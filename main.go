@@ -5,5 +5,10 @@ import (
 )
 
 func main() {
-	server.CreateHTTPServer().ListenAndServe()
+	instances := 3
+	for i := 0; i < instances; i++ {
+		go server.CreateHTTPServer(5000 + instances).ListenAndServe()
+	}
+	for {
+	}
 }
